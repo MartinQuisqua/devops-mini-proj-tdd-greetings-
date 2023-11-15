@@ -16,3 +16,7 @@ test('greet returns a greeting for null', () => {
 test('greet returns a greeting for empty string', () => {
   expect(greet('')).toBe('Hello, my friend')
 })
+
+test('greet returns a greeting for a UPPERCASE', () => {
+  expect(greet('HAZIQ')).toBe('HELLO, HAZIQ')
+})

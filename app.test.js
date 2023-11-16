@@ -25,3 +25,13 @@ test('greet returns a greeting for two names', () => {
   const names = ['Martin', 'Haziq']
   expect(greet(names)).toBe('Hello, Martin and Haziq')
 })
+
+test('greet returns a greeting for multiple names', () => {
+  const names = ['Martin', 'Haziq', 'Louis']
+  expect(greet(names)).toBe('Hello, Martin, Haziq, and Louis')
+})
+
+test('greet returns a greeting for multiple names', () => {
+  const names = ['Martin', 'Haziq', 'Damien', 'Roberto']
+  expect(greet(names)).toBe('Hello, Martin, Haziq, Damien, and Roberto')
+})

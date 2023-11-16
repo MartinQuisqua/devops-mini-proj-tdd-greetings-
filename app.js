@@ -8,10 +8,26 @@ function greet (name) {
       return 'Hello, ' + name[0] + ' and ' + name[1]
     } else {
       let temp = ''
+      let tempUpperCase = ''
       for (let i = 0; i < name.length - 1; i++) {
-        temp += name[i] + ', '
+        if (name[i] === name[i].toUpperCase()) {
+          tempUpperCase += name[i] + ', '
+        } else {
+          temp += name[i] + ', '
+        }
       }
-      return 'Hello, ' + temp + 'and ' + name[name.length - 1]
+      if (tempUpperCase !== '') {
+        tempUpperCase = tempUpperCase.slice(0, -2)
+        tempUpperCase = ' AND HELLO ' + tempUpperCase + '!'
+      }
+      temp = temp.slice(0, -2)
+      return (
+        'Hello, ' +
+                temp +
+                ', and ' +
+                name[name.length - 1] +
+                tempUpperCase
+      )
     }
   }
   if (name === name.toUpperCase()) {

@@ -35,3 +35,17 @@ test('greet returns a greeting for multiple names', () => {
   const names = ['Martin', 'Haziq', 'Damien', 'Roberto']
   expect(greet(names)).toBe('Hello, Martin, Haziq, Damien, and Roberto')
 })
+
+test('greet returns a greeting for multiple names whith a UpperCase', () => {
+  const names = ['Martin', 'Haziq', 'DAMIEN', 'Roberto']
+  expect(greet(names)).toBe(
+    'Hello, Martin, Haziq, and Roberto AND HELLO DAMIEN!'
+  )
+})
+
+test('greet returns a greeting for multiple names whith multiple UpperCase', () => {
+  const names = ['Martin', 'HAZIQ', 'DAMIEN', 'ROBERTO']
+  expect(greet(names)).toBe(
+    'Hello, Martin, and ROBERTO AND HELLO HAZIQ, DAMIEN!'
+  )
+})

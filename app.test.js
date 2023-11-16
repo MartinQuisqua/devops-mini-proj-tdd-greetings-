@@ -49,3 +49,11 @@ test('greet returns a greeting for multiple names whith multiple UpperCase', () 
     'Hello, Martin, and ROBERTO AND HELLO HAZIQ, DAMIEN!'
   )
 })
+
+test('greet returns a greeting in language with FR', () => {
+  expect(greet('Bob', 'fr')).toBe('Bonjour, Bob')
+})
+
+test('greet returns a greeting in language with NL', () => {
+  expect(greet('Bob', 'nl')).toBe('Hallo, Bob')
+})

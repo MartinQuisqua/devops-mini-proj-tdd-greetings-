@@ -1,7 +1,14 @@
-/* eslint-disable eqeqeq */
-function greet (name) {
+/* funtion */
+
+function greet (name, language = 'en') {
   if (name === undefined || name === null || name === '') {
     return 'Hello, my friend'
+  }
+  if (language === 'fr') {
+    return 'Bonjour, ' + name
+  }
+  if (language === 'nl') {
+    return 'Hallo, ' + name
   }
   if (Array.isArray(name)) {
     if (name.length === 2) {

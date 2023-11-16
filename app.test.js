@@ -20,3 +20,8 @@ test('greet returns a greeting for empty string', () => {
 test('greet returns a greeting for a UPPERCASE', () => {
   expect(greet('HAZIQ')).toBe('HELLO, HAZIQ')
 })
+
+test('greet returns a greeting for two names', () => {
+  const names = ['Martin', 'Haziq']
+  expect(greet(names)).toBe('Hello, Martin and Haziq')
+})

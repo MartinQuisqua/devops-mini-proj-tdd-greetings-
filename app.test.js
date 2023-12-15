@@ -9,7 +9,7 @@ test('greet returns a greeting for no name', () => {
   expect(greet()).toBe('Hello, my friend')
 })
 
-test('greet returns a greeting for null', () => {
+test('greet returns a greeting for null ', () => {
   expect(greet(null)).toBe('Hello, my friend')
 })
 

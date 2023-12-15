@@ -35,4 +35,7 @@ jobs:
       - run: echo " The workflow is now ready to test your code on the runner. "
 
       - name: Display start time
-        run: echo "Start time: $(date)"
+        run: echo "Start time $(date)"
+
+        - name: Display start time
+        run: echo "Start time $(date)"

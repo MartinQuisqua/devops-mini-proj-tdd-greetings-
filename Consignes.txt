@@ -43,15 +43,18 @@ Liens utiles:
 
 - Décrivez brièvement ce que fait votre fichier YML.  
 ```bash
-<votre réponse ici>
+Le fichier YML configure un workflow pour un github, il s'execute à chaque pull requests
 ```
 - En particulier : à quoi sert le “on” ? dans votre fichier YML ?  Quelle est la différence entre “on push” et “on pull request”. Que conseilleriez-vous comme option parmi ces 2 options à un groupe de développeurs junior ? Pourquoi ? 
 ```bash
-<votre réponse ici>
+on: pull_request" déclenche le flux de travail à chaque pull request.
+La différence entre "on: pull_request" et "on: push" est que le premier est déclenché spécifiquement lorsqu'une pull request est ouverte ou modifiée, tandis que le second est déclenché à chaque push, indépendamment des pull requests.
+Pour un groupe de développeurs juniors, il est généralement conseillé d'utiliser "on: pull_request" car cela permet de tester les modifications avant de les fusionner dans la branche principale.
+
 ```
 - Quelle est la différence entre run et run_on ?  Expliquez par rapport à votre pipeline.  
 ```bash
-<votre réponse ici>
+Run est utilisé pour executer des commandes dans les etapes de pipeline
 ```
 - Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline. 
 ```bash

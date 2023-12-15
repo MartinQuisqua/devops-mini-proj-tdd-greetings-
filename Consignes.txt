@@ -55,13 +55,15 @@ Liens utiles:
 ```
 - Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline. 
 ```bash
-<votre réponse ici>
+"uses" est utilisé pour spécifier une action à exécuter dans une étape particulière du pipeline, tandis que "run" est utilisé pour exécuter des commandes shell dans une étape.
 ```
 - Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline. 
 ```bash
-<votre réponse ici>
+Oui, les étapes peuvent généralement être interverties dans un pipeline, mais cela dépend des dépendances entre les étapes. Par exemple, il serait logique de ne pas exécuter les tests avant l'installation des dépendances. Dans le fichier YML fourni, les étapes semblent être dans un ordre logique.
 ```
 - Je veux ajouter un test de sécurité sur mon pipeline en exécutant le programme secure_app. Que devrais-je faire ?  Quelles questions devriez-vous vous poser ? 
 ```bash
-<votre réponse ici>
+Pour ajouter un test de sécurité avec secure_app, Il faut créer une nouvelle étape dans votre pipeline. 
+Les question a se poser sont  : Comment installer secure_app? Quels sont les prérequis? 
+Où se trouvent les résultats des tests de sécurité? et ajuster le fichier YML en conséquence, en ajoutant une nouvelle étape après les tests Jest, par exemple.
 ```

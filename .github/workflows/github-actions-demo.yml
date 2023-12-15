@@ -38,3 +38,5 @@ jobs:
 
       - name: Display start time
         run: echo "Start time $(date)"
+
+      - name: Deploy to GitHub Pages

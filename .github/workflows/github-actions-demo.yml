@@ -37,5 +37,4 @@ jobs:
         run: npm run build
 
       - name: Display start time
-        run: echo "Start time: $(date)"
-
+        run: echo "Start time $(date)"

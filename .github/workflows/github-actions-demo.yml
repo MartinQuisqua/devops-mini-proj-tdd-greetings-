@@ -2,11 +2,13 @@ name: GitHub Actions Demo
 on:
   pull_request:
     branches:
-      
+    - main
+
 jobs:
+  build: 
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       
-name: Check out repository
+- name: Check out repository
       uses: actions/checkout@v2
